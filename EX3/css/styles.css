@@ -1,0 +1,125 @@
+/* Laura Jardim, 5.10.2023, LDC, WD-EX3 */
+
+
+html {
+    font-size: 10px;  /* a fonte base foi set para 10px, que mais tarde vai ser alterada para outras regras*/
+  }
+
+/*Importar fontes!*/
+@font-face {
+    font-family: "Nexa Slab";
+    src: url("../fonts/NexaSlab_FF-Bold.otf") format("truetype");
+  }
+
+@font-face {
+    font-family: "Nexa Bold";
+    src: url("../fonts/Nexa_FF-Bold.otf") format("truetype");
+ }
+
+@font-face {
+    font-family: "Nexa Heavy";
+    src: url("../fonts/Nexa_FF-Heavy.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "Nexa Regular";
+    src: url("../fonts/Nexa_FF-Regular.otf") format("truetype");
+}
+
+
+/*define estilo para a maior parte da estrutura*/
+body {
+    background-color:black;
+    font-family: Nexa Regular, 'Arial Narrow Bold', sans-serif;
+    line-height: 1.5;
+    color:rgb(244, 247, 250); /* o texto está todo neste azul claro!!*/
+
+}
+
+
+/* todos os <h1> (que por acaso é só o DA WEASEL no começo) estão alinhados ao centro*/
+h1 {
+    color:rgb(255, 247, 238);
+    font-size: 6rem;  /*o rem funciona como um tamanho de fonte que é relativo aquele decidido como base (root). Neste caso, 1rem é igual a 10px*/
+    font-family:'Nexa Heavy', 'Arial Narrow', Arial, sans-serif;
+    text-align: center; 
+}
+
+h2{
+    color: rgb(194, 32, 32);
+    font-size: 3.5rem; 
+    font-family: 'Nexa Heavy', 'Arial Narrow', Arial, sans-serif;
+}
+
+h3{
+    font-size: 3rem;
+    font-family: 'Nexa Bold', 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+    font-size: 1.5rem;
+    font-family:'Nexa Regular', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.5;
+}
+
+strong {
+    color: rgb(194, 32, 32);
+    font-weight: 700;
+    font-style: normal;
+}
+
+em {
+    color: rgb(202, 230, 255);
+    font-weight: 200;
+}
+
+nav ul {
+    list-style: none; /* remore as bullets / pontos / traços */
+  }
+
+.lista1 { /*lista no canto superior direito*/
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display:inline-block;
+}
+  
+li {
+    font-family:'Nexa Regular', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+    margin: 20px; /* espaço entre os pontos da lista */
+}
+
+a {
+    text-decoration: none; /* para os links não estarem underlined*/
+}
+
+a:link {color: white;}
+
+a:active {color:white;}
+
+a:hover {color: rgb(194, 32, 32);}
+
+a:visited {color: rgb(194, 32, 32);}
+
+#jornal{
+    background-color: rgb(232, 247, 251);
+    font-size: 2.3rem;
+}
+
+#tabela{
+    background-color: rgb(194, 32, 32);
+    font-size: 2.3rem;
+}
+
+.notas {  /* isto não está a funcionar e não sei porquê, não percebo se é uma regra que está a"override esta??"*/
+    font-style: italic;
+    font-size: 5%;
+    color:rgb(202, 230, 255);
+}
+
+footer {
+    background-color: rgb(152, 16, 16);
+    color: rgb(244, 247, 250);
+    padding: 10px;
+}
